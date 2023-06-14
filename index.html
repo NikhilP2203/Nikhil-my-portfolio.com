@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/2d704a65d9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/Nik.png">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi, I am <span>Nikhil</span><br>From India</h1>
+            </div>
+        </div>
+<!------------------------------------------------------------------About-------------------------------------------------------------->
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.jpg"
+                    width="50%">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hi I am Nikhil Panda, I am a student studying computer engineering currently in third year. I have devloped few Projects which enhanced and gave me new skills that helped me in my projects. </p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li> <span>UI/UX</span><br>Designing Web/App Interfaces<br></li>
+                            <li> <span>Web Devlopement</span><br> Web App Devlopement<br></li>
+                            <li> <span>App Devlopment</span><br>Building android apps<br></li>
+                            <li> <span>languages</span><br>C<br>C++<br>Java<br>Python<br>SQL<br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li> <span>Online law System</span><br>This was a Group project we are making a system that allows lawyers and clients to communicate via video calling and also the user can search diffrent types of laws <br></li>
+                            <li> <span>Voting App</span><br>This app includes voting to specific group or an indivisual which is been registered <br></li>
+                            <li> <span>Portfolio Website</span><br>This website will help you to know about me <br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li> <span>Pursuing</span><br>Third year in computer engineering and Honors in Data Science <br>College name: St. John college of engineering and management<br></li>
+                            <li> <span>2018</span><br> Completed class XII in Science specialized in Computer science C++ <br>College name: Muljibhai Mehta INternational School & Jr. College (C.B.S.E.)<br></li>
+                            <li> <span>2016</span><br>Completed class X <br>School name: Muljibhai Mehta International School (C.B.S.E.)<br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----------------------------------------------------------------Services------------------------------------------------------------>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Designing</h2>
+                <p>Devloping websites and pages to reflect a company's brand and information and ensure a user-friendly experience. </p>
+                <a href="#">learn more</a>
+            </div>
+        <div>
+            <i class="fa-sharp fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Designing</h2>
+            <p>Creating visual elements that you interact with when using a website, app, or other electronic device also the entire interaction you have with a product, including how you feel about the interaction. </p>
+            <a href="#">learn more</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Designing</h2>
+            <p>Creating an App That helps users and clients with their needs to ensure a user-friendly experience.</p>
+            <a href="#">learn more</a>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------------------------------Portfolio-------------------------------------------------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Online Voting App</h3>
+                    <p>The app contains an interface which allows user to vote the registered group or an indivisual</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Online Law System</h3>
+                    <p>The Website allows people to search laws and helps them to communicate with lawyers via video call system</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Portfolio</h3>
+                    <p> A website which will highlight and showcase samples of some of my best work, along with life experiences, values and achievements.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------------------------------------------------Contact--------------------------------------------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>pandanikhil23@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9004311693</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                </div><br>
+                <a href="image/Nikhil Resume.pdf"download ><button class="btn btn2">Download Resume</button></a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="your Email" required>
+                    <textarea name="Message" row="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Nikhil Panda. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right ="-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwBw98GcH43bJMQXoEoJLC1cYliqPhacoTfjm7BxCbY9GGDQNCbL_Vp9EzctJWGt5-p/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("id")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
